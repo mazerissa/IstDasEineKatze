@@ -1,12 +1,19 @@
 cabal-version: 3.0
+
 name: istDasEineKatze
 version: 0.1.0.0
-author: You
-license: BSD-3-Clause
 
 executable istDasEineKatze
-    main-is: Main.hs
-    hs-source-dirs: app
+    main-is:          Main.hs
+    other-modules:    NeuralNetwork.Matrix
+                    , NeuralNetwork.Neuron
+                    , NeuralNetwork.Activation
+                    , NeuralNetwork.Layer
+    hs-source-dirs:
+        app
+        src
+
     build-depends:
         base >= 4.14 && < 5
+
     default-language: Haskell2010

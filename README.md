@@ -12,5 +12,5 @@ Stack:
 **To run it type:**
 
 ```bash
-cabal run
+cabal run -v0
 ```

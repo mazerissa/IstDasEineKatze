@@ -1,9 +1,18 @@
 module Main where
-import NeuralNetwork.Matrix
+
+import NeuralNetwork.Layer
+
 
 main :: IO ()
 main = do
-    let input = [1,9,6]
-    let weights = [9,12,15]
 
-    print(dot input weights)
+    let inputs = [1,2,3]
+
+    let weights =
+            [
+                [1,1,1],
+                [2,2,2],
+                [3,3,3]
+            ]
+
+    print (layer inputs weights)
